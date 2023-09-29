@@ -70,3 +70,5 @@ const outputs = users.reduce((acc, curr) => {
   return acc;
 }, []);
 console.log(outputs); // ["Raj", "Abhi", "Ankit"]
+
+
