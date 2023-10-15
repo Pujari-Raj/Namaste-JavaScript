@@ -15,7 +15,7 @@ let enddate = startdate;
 
 console.log("while died!!");
 
-//ep-18
+//Episode-18
 
 const radiusArr = [1, 2, 3, 4];
 
