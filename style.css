@@ -1,0 +1,93 @@
+/* body {
+  margin: 20px;
+} */
+.shine {
+  background: #b9bcbf;
+  background-image: linear-gradient(
+    to right,
+    #b9bcbf 0%,
+    #edeef1 20%,
+    #b9bcbf 40%,
+    #b9bcbf 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: 800px 400px;
+  display: inline-block;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+.ShimmerCard {
+  /* background: blue; */
+  height: 300px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.btn-container {
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  /* gap: 57px; */
+  height: 20px;
+  width: 30%;
+  margin-top: 200px;
+  margin-left: 20px;
+ 
+}
+
+.banner-btn{
+  background: brown;
+  border: 1px solid;
+  border-radius: 4rem;
+  padding: 0 0.9rem;
+}
+
+.reccShimmerCardImg {
+  /* background: red; */
+  width: 60%;
+  height: 150px;
+  border-radius: 5px;
+}
+.reccShimmerCardDesc {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+/* .reccShimmerLines {
+  height: 10px;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 0;
+}
+
+.searchShimmerCardImg {
+  width: 49%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.searchShimmerLines {
+  height: 20px;
+  width: 70%;
+  border-radius: 2px;
+}
+
+.searchmidShimmerLines {
+  height: 20px;
+  width: 40%;
+  border-radius: 2px;
+} */
