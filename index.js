@@ -1,4 +1,4 @@
-var name = "pujari";
+var name = "pujari"; //ep-2
 
 function developer(designation) {
     const role = designation;
@@ -7,7 +7,7 @@ function developer(designation) {
 
 var position = developer("frontend engineer");
 
-//ep-2
+//ep-3
 var num = 18;
 
 function getName() {
@@ -21,6 +21,7 @@ console.log(num);
 //ep-4
 
 var x = 10;
+// FUNCTION INVOCATION
 a();
 b();
 console.log(x);
@@ -44,20 +45,22 @@ console.log(x); // undefined var x = 25;
 console.log(x); // 25
 console.log(a); // Uncaught ReferenceError: a is not defined
 
-// //ep-7
+//ep-7
 function a() {
     var number = 19;
-    c();
     function c() {
-        console.log(number)
+      console.log(number)
     }
+    c();
 }
 
-// a();
+a();
 // // console.log(number);
 
 // ep-8
-// console.log(a); // ReferenceError: Cannot access 'a' before initialization
+
+// console.log(a); 
+// ReferenceError: Cannot access 'a' before initialization, bcz of temporal deadzonex 
 // console.log(b); // prints undefined as expected
 // let a1 = 10;
 // console.log(a1); // 10
@@ -74,6 +77,8 @@ function x() {
   }
   return y;
 }
+
+x();
 
 var codenum1 = x();
 console.log(codenum1);
@@ -111,6 +116,7 @@ function x() {
   }
   console.log("Namaste Javascript");
 }
+
 x();
 
 function x() {

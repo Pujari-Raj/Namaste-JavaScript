@@ -47,8 +47,8 @@ Array.prototype.calculate = function (operation) {
 
 // console.log(calculate(radiusArr, area));
 // console.log(calculate(radiusArr, circumference));
-console.log(radiusArr.map(area));
-console.log(radiusArr.calculate(area));
+// console.log(radiusArr.map(area));
+// console.log(radiusArr.calculate(area));
 
 const users = [
   { firstName: "Raj", lastName: "Pujari", age: 23 },
@@ -61,7 +61,9 @@ const users = [
 const output = users
   .filter((user) => user.age < 30)
   .map((user) => user.firstName);
-console.log(output); // ["Raj", "Abhi", "Ankit"]
+// console.log(output); // ["Raj", "Abhi", "Ankit"]
+
+
 // Homework challenge: Implement the same logic using reduce
 const outputs = users.reduce((acc, curr) => {
   if (curr.age < 30) {
@@ -69,6 +71,43 @@ const outputs = users.reduce((acc, curr) => {
   }
   return acc;
 }, []);
-console.log(outputs); // ["Raj", "Abhi", "Ankit"]
+// console.log(outputs); // ["Raj", "Abhi", "Ankit"]
 
+//
+const originalObject = {
+  name: "raj",
+  age: 22,
+  hobbies: ['cricket', 'tennis']
+}
 
+const copiedObject = originalObject;
+// console.log(copiedObject); //{ name: 'raj', age: 22, hobbies: [ 'cricket', 'tennis' ] }
+
+originalObject.name = "raghu"
+
+console.log("after changing name");
+// console.log("copiedObject->",copiedObject);
+// copiedObject-> { name: 'raghu', age: 22, hobbies: [ 'cricket', 'tennis' ] }
+
+// console.log("originalObject->",originalObject);
+// originalObject-> { name: 'raghu', age: 22, hobbies: [ 'cricket', 'tennis' ] }
+
+// deep-copy
+
+const OriginalObject = {
+  name: "raj",
+  age: 22,
+  hobbies: ['cricket', 'tennis']
+};
+
+// Deep copy using the spread operator
+const CopiedObject = { ...OriginalObject };
+
+console.log("originalObject before change:", OriginalObject);
+
+// Modify the originalObject
+OriginalObject.name = "raghu";
+OriginalObject.hobbies.push('swimming');
+
+console.log("originalObject after change:", OriginalObject);
+console.log("copiedObject:", CopiedObject);

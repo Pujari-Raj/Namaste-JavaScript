@@ -1,18 +1,24 @@
-/* body {
-  margin: 20px;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  /* margin: 20px; */
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .shine {
-  background: #b9bcbf;
+  background: #c3c6c8;
   background-image: linear-gradient(
     to right,
-    #b9bcbf 0%,
+    #dde1e4 0%,
     #edeef1 20%,
-    #b9bcbf 40%,
-    #b9bcbf 100%
+    #dde1e4 40%,
+    #dde1e4 100%
   );
 
   background-repeat: no-repeat;
-  background-size: 800px 400px;
+  background-size: 900px 700px;
   display: inline-block;
   position: relative;
   animation-duration: 1s;
@@ -26,13 +32,22 @@
   -webkit-animation-name: placeholderShimmer;
   -webkit-animation-timing-function: linear;
 }
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -950px 0;
+  }
+
+  100% {
+    background-position: 950px 0;
+  }
+}
 .ShimmerCard {
   /* background: blue; */
-  height: 300px;
+  height: 450px;
   width: 100%;
   flex-direction: column;
   display: flex;
-  gap: 10px;
+  gap: 50px;
   padding: 5px 0;
 }
 
@@ -43,9 +58,8 @@
   /* gap: 57px; */
   height: 20px;
   width: 30%;
-  margin-top: 200px;
+  margin-top: 350px;
   margin-left: 20px;
- 
 }
 
 .banner-btn{
@@ -53,10 +67,29 @@
   border: 1px solid;
   border-radius: 4rem;
   padding: 0 0.9rem;
+  height: 3rem;
+  width: 8rem;
+  cursor: pointer;
+}
+.centered-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 205vh;
+}
+.Category-title {
+  background: blanchedalmond;
+  border: 1px solid;
+  border-radius: 4rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 15rem;
+  height: 1rem;
 }
 
-.reccShimmerCardImg {
-  /* background: red; */
+/* .reccShimmerCardImg {
+  background: red;
   width: 60%;
   height: 150px;
   border-radius: 5px;
@@ -66,7 +99,8 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-}
+} */
+
 /* .reccShimmerLines {
   height: 10px;
   width: 100%;
